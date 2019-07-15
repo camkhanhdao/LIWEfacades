@@ -64,5 +64,8 @@ To run this project:
 
 
 
-If you have any questions contact me via Telegram [@camkhanhdao] or email <camkhanhdao@gmail.com>.
+If you have any questions contact me  via my email <camkhanhdao@gmail.com>.
+More detail the data, plots and result of the environmental testing process are available here 
+[here]: http://urn.fi/URN:NBN:fi:amk-201905139502
+
 

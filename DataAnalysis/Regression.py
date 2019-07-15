@@ -23,7 +23,7 @@ df = CleanData.main_merge()
 
 class Regression:
 
-    def __init__(self,module='v1', path_name=regression_path):
+    def __init__(self, module='v1', path_name=regression_path):
         self.path_name = path_name
         self.module = module
 

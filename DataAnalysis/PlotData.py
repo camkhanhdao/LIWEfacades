@@ -12,6 +12,7 @@ import matplotlib.cm as cm
 import matplotlib.ticker as ticker
 import seaborn as sns
 import CleanData
+import credentials
 
 figure_path = credentials.get_path("figure_path")
 month_dict = {1: 'January', 2: 'February', 3: 'March', 4: 'April',
@@ -48,6 +49,7 @@ class PlotData:
                      'ic': ['hum', 'irr_index', 'hum_index', 'T']}
         groupby = {'tc': 'irr_index', 'humc': 'irr_index', 'ic': 'T_index'}
         index_levels = {'ic': 'irr', 'tc': 'T', 'humc': 'hum'}
+
         if self.types == 1:
             correlation = df.drop(drop_dict.get(self.var), axis=1). \
                 apply(lambda x: x.astype(np.float64)).groupby(groupby.get(self.var)).corr()

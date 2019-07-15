@@ -83,7 +83,7 @@ class ReadData:
 
 class CleanData:
 
-    def __init__(self, dataframe, file, year=2018, path_name=path_old):
+    def __init__(self, dataframe, file, year=2018, path_name=sorted_path):
         self.dataframe = dataframe
         self.file = file
         self.path_name = path_name
@@ -91,7 +91,7 @@ class CleanData:
 
     def get_folder(self):
         folder = file_code.get(self.file)
-        return sorted_path + folder + '/'
+        return self.path_name + folder + '/'
 
     # normalization
     def normalization(self, day, month):
@@ -146,7 +146,7 @@ class CleanData:
 
 class ReadNormalized:
 
-    def __init__(self, file, year=2018, path_name=path_old):
+    def __init__(self, file, year=2018):
         self.file = file
         self.path_name = path_name
         self.year = year
